@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        
+    }
+    body{
+        background-image: linear-gradient(to right, rgb(34, 34, 90),skyblue);
+    }
+    .rocket{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        gap: 10px;
+    
+        
+    }
+    .welcome > p {
+        
+        text-align: center;
+    }
+    
+    
+    .away{
+        /* margin: auto; */
+        padding-bottom: 150px;
+        font-weight: light;
+        font-size: 20px;
+        color: rgb(118, 117, 117);
+        margin-left: 20px;
+        text-align: center;
+        
+        
+    }
+    .wel{
+        /* text-align: center; */
+        /* padding-top: 50px; */
+        font-size: 35px;
+        font-weight: bold;
+        margin-left: 80px;
+        text-align: center;
+        color: rgb(181, 178, 178);
+        
+    }
+    button{
+        /* text-align: center; */
+        width: 180px;
+        border-radius: 20px;
+        padding: 8px;
+        border: none;
+        font-size: large;
+        font-weight: bolder;
+        margin-left: 50px;
+    }
+    .employ{
+        background-color: white;
+        margin: 35px 20px;
+        height: 500px;
+        /* clip-path: polygon(0% 5%,50% 0%,0% 50%); */
+    
+        
+    }
+    .ploy{
+        display: flex;
+        margin-left: 710px;
+        margin-top: 15px;
+        margin-right: 50px;
+        width: 230px;
+
+        background-color: rgb(8, 84, 142);
+        border-radius: 40px;
+        color: white;
+        
+    }
+    .first{
+        width: 40%;
+        text-align: center;
+        background-color: white;
+        color: rgb(59, 155, 215);
+        margin: 2px;
+        border-radius: 30px;
+        font-weight: bolder;
+        padding: 2px 0px;
+    }
+    .second{
+        
+        text-align: center;
+        padding: 4px 50px;
+        
+        
+    }
+    .apply{
+        text-align: center;
+        color: rgb(93, 89, 89);
+        font-weight: bold;
+        padding-top: 30px;
+    }
+    .place{
+        /* display: flex; */
+        /* gap: 100px; */
+        margin: 60px 50px;
+        /* text-align: center; */
+        
+        
+        
+    }
+    #fname{
+        width: 350px;
+        padding: 9px 15px;
+        margin-left: 30px;
+        color: grey;
+        font-size: small;
+        font-weight: 700;
+
+    }
+    #email{
+        width: 350px;
+        margin-left: 30px;
+        padding: 9px 15px;
+        color: grey;
+        font-size: small;
+        font-weight: 700;
+
+    }
+    #lname{
+        margin-left: 30px;
+        width: 350px;
+        padding: 9px 15px;
+        color: grey;
+        font-size: small;
+        font-weight: 700;
+
+        
+    }
+    #number{
+        margin-left: 30px;
+        width: 350px;
+        padding: 9px 15px;
+        color: grey;
+        font-size: small;
+        font-weight: 700;
+
+        
+    }
+    #password{
+        margin-left: 30px;
+        width: 350px;
+        padding: 9px 15px;
+        color: grey;
+        font-size: small;
+        font-weight: 700;
+
+        
+    }
+    #please{
+        margin-left: 30px;
+        width: 350px;
+        padding: 9px 15px;
+        font-size: large;
+        color: grey;
+        font-size: small;
+        font-weight: 700;
+
+    }
+    #pw{
+        margin-left: 30px;
+        width: 350px;
+        padding: 9px 15px;
+        color: grey;
+        font-size: small;
+        font-weight: 700;
+
+    }
+    #text2{
+        margin-left: 30px;
+        width: 350px;
+        padding: 9px 15px;
+        color: grey;
+        font-size: small;
+        font-weight: 700;
+
+    }
+    .inp{
+        margin-left: 30px;
+        padding-top: 20px;
+    }
+    .but{
+        margin-left: 550px;
+        /* color: white; */
+        /* padding: 10px 20px; */
+    }
+    .but > input {
+        color: white;
+        padding: 5px 50px;
+        background-color: rgba(8, 65, 145, 0.904);
+        border-radius: 20px;
+        font-size: small;
+        font-weight: bold;
+        border: none;
+        /* border-top-right-radius: 10px; */
+        /* border-bottom-right-radius: 10px; */
+    }
+    
+    
+   </style>
+   
+</head>
+<body>
+    <section class="rocket">
+
+        <div class="Welcome">
+            <i class="fa fa-rocket" style="padding-top: 150px; margin-left: 130px; font-size: xx-large; color: white;"></i> <br>
+            <strong class="wel">Welcome</strong> <br><br>
+            <p class="away">You are 30 seconds away <br>
+               from earning your own <br>
+               money!</p>
+            <button>Login</button>
+        </div>
+
+        <div class="employ">
+
+           <div class="ploy">
+             <p class="first">Employee</p>
+             <p class="second">Hirer</p>
+           </div>
+
+           <h1 class="apply">Apply as a Employee</h1>
+
+           <form action="">
+             <div class="place">
+                 <div>
+                    <input type="text" id="fname" placeholder="First Name *">
+                    <input type="email" name="" id="email" placeholder="Your Email *">
+                </div> <br>
+                <div>
+                    <input type="text" name="" id="lname" placeholder="last Name *">
+                    <input type="number" name="" id="number" placeholder="Your Phone *">
+                </div> <br>
+                <div>
+                    <input type="password" name="" id="password" placeholder="Password *">
+                    <select name="" id="please">
+                        <option value="">Please select your Security Question</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select><br><br>
+                </div>
+                <div>
+                    <input type="password" name="" id="pw" placeholder="Confirm password *">
+                    <input type="text" name="" id="text2" placeholder="Enter Your Answer *">
+                </div>
+                <div class="inp">
+                    <input type="radio" name="sex" id="ma" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="sex" id="fem" value="female">
+                    <label for="male">Female</label>
+                </div>
+                <div class="but">
+                    <input type="button" value="Register">
+                </div>
+                    
+             </div>
+            </form>
+
+
+        
+        </div>
+    </section>
+</body>
+</html>
